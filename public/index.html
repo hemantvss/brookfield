@@ -99,26 +99,17 @@
                     </li>
                     <li class="nav-item"><a class="nav-link active" href="index.html" data-bs-toggle=""
                         aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-icon"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
-                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" class="feather feather-pie-chart">
-                              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
-                              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
-                            </svg></span><span class="nav-link-text px-0">scheduling </span>
+                        <div class="d-flex align-items-center"><span class="nav-link-icon uil-schedule"
+                            style="font-size: 16px;"></span><span class="nav-link-text px-0">Scheduling </span>
                         </div>
                       </a>
 
                     </li>
                     <li class="nav-item"><a class="nav-link" href="sheduling-list.html" data-bs-toggle=""
                         aria-expanded="false">
-                        <div class="d-flex align-items-center"><span class="nav-link-icon"><svg
-                              xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24"
-                              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                              stroke-linejoin="round" class="feather feather-pie-chart">
-                              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
-                              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
-                            </svg></span><span class="nav-link-text px-0">scheduling List</span>
+                        <div class="d-flex align-items-center"><span
+                            class="far fa-calendar-alt nav-link-icon"></span><span class="nav-link-text px-0">Scheduling
+                            List</span>
                         </div>
                       </a>
 
@@ -2194,7 +2185,7 @@
       <div class="pb-5">
         <div class="row gy-3 mb-3 justify-content-between ">
           <div class="col-md-6 col-auto">
-            <h2 class="mb-2 text-1100">scheduling </h2>
+            <h2 class="mb-2 text-1100">Scheduling </h2>
             <!-- <h5 class="text-700 fw-semi-bold">Here’s what’s going on at your business right now</h5> -->
           </div>
           <!-- <div class="col-md-6">
@@ -2270,172 +2261,179 @@
                 </div>
               </div>
               <div class="row gy-3 justify-content-between">
-                <div class="mb-3 col-md-6" id="bulk-upload" style="display: none;">
+                <div class="mb-3 col-md-7" id="bulk-upload" style="display: none;">
+                  <div class="d-flex">
+                    <div class="file">
+                      <label class="form-label">Bluk Upload</label>
+                      <input class="form-control" type="file" multiple>
+                    </div>
+                    <div class="mt-4 mx-3"><button class="btn btn-primary me-1 mb-1 " type="button">Download File</button></div>
 
-                  <label class="form-label">Bluk Upload</label>
+                  </div>
 
-                  <input class="form-control" type="file" multiple>
                   <div class="submit mt-4">
                     <button class="btn btn-primary me-1 mb-1" type="button">Submit</button>
                   </div>
+
+
                 </div>
-                
-
               </div>
+
             </div>
-
           </div>
-        </div>
 
-        <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 pt-3 pb-5 bg-white border-y border-300" id="single-upload"
-          style="display: none;">
-                    <style>
-            table {
+          <div class="mx-n4 px-4 mx-lg-n6 px-lg-6 pt-3 pb-5 bg-white border-y border-300" id="single-upload"
+            style="display: none;">
+
+            <style>
+              table {
                 width: 100%;
                 border-collapse: collapse;
                 margin-top: 20px;
-            }
-    
-            th, td {
+              }
+
+              th,
+              td {
                 border: 1px solid #ddd;
                 padding: 8px;
                 text-align: center;
-            }
-    
-           
-    
-            .form-control {
+              }
+
+
+
+              .form-control {
                 width: 100%;
                 box-sizing: border-box;
-            }
-    
-            h2 {
+              }
+
+              h2 {
                 margin-bottom: 10px;
                 font-size: 24px;
                 color: #1100;
-            }
-        </style>
-          <table class="table">
-            <thead>
+              }
+            </style>
+            <table class="table">
+              <thead>
                 <tr class="time-header">
-                    <th scope="col"></th>
-                    <th scope="col">0-15 min</th>
-                    <th scope="col">15-30 min</th>
-                    <th scope="col">30-45 min</th>
-                    <th scope="col">45-60 min</th>
+                  <th scope="col"></th>
+                  <th scope="col">0-15 min</th>
+                  <th scope="col">15-30 min</th>
+                  <th scope="col">30-45 min</th>
+                  <th scope="col">45-60 min</th>
                 </tr>
-            </thead>
-            <tbody>
+              </thead>
+              <tbody>
                 <tr>
-                    <td scope="row">9-10 AM</td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td scope="row">9-10 AM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
                 </tr>
                 <tr>
-                    <td scope="row">10-11 AM</td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                    <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td scope="row">10-11 AM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
                 </tr>
-              <tr>
-                <td scope="row">11-12 AM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-              <tr>
-                <td scope="row">12-1 PM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-              <tr>
-                <td scope="row">1-2 PM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-              <tr>
-                <td scope="row">2-3 PM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-              <tr>
-                <td scope="row">3-4 PM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-              <tr>
-                <td scope="row">4-5 PM</td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-                <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="submit mt-4">
-            <button class="btn btn-primary me-1 mb-1" type="button">Submit</button>
+                <tr>
+                  <td scope="row">11-12 AM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+                <tr>
+                  <td scope="row">12-1 PM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+                <tr>
+                  <td scope="row">1-2 PM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+                <tr>
+                  <td scope="row">2-3 PM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+                <tr>
+                  <td scope="row">3-4 PM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+                <tr>
+                  <td scope="row">4-5 PM</td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                  <td><input type="text" name="" class="form-control" placeholder="No. of units"></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="submit mt-4">
+              <button class="btn btn-primary me-1 mb-1" type="button">Submit</button>
+            </div>
           </div>
+
+          <footer class="footer position-absolute">
+            <div class="row g-0 justify-content-between align-items-center h-100">
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 mt-2 mt-sm-0 text-900"><br class="d-sm-none">2023 ©<a class="mx-1" href="">Vishleshan</a>
+                </p>
+              </div>
+              <div class="col-12 col-sm-auto text-center">
+                <p class="mb-0 text-600">v1.13.0</p>
+              </div>
+            </div>
+          </footer>
+
         </div>
+        <script>
+          var navbarTopStyle = window.config.config.phoenixNavbarTopStyle;
+          var navbarTop = document.querySelector('.navbar-top');
+          if (navbarTopStyle === 'darker') {
+            navbarTop.classList.add('navbar-darker');
+          }
 
-        <footer class="footer position-absolute">
-          <div class="row g-0 justify-content-between align-items-center h-100">
-            <div class="col-12 col-sm-auto text-center">
-              <p class="mb-0 mt-2 mt-sm-0 text-900"><br class="d-sm-none">2023 ©<a class="mx-1" href="">Vishleshan</a>
-              </p>
-            </div>
-            <div class="col-12 col-sm-auto text-center">
-              <p class="mb-0 text-600">v1.13.0</p>
-            </div>
-          </div>
-        </footer>
+          var navbarVerticalStyle = window.config.config.phoenixNavbarVerticalStyle;
+          var navbarVertical = document.querySelector('.navbar-vertical');
+          if (navbarVertical && navbarVerticalStyle === 'darker') {
+            navbarVertical.classList.add('navbar-darker');
+          }
+        </script>
+        <script>
+          // Get the radio buttons and the upload divs
+          var bulkRadio = document.getElementById('bulk');
+          var bulkUploadDiv = document.getElementById('bulk-upload');
+          var singleRadio = document.getElementById('single');
+          var singleUploadDiv = document.getElementById('single-upload');
 
-      </div>
-      <script>
-        var navbarTopStyle = window.config.config.phoenixNavbarTopStyle;
-        var navbarTop = document.querySelector('.navbar-top');
-        if (navbarTopStyle === 'darker') {
-          navbarTop.classList.add('navbar-darker');
-        }
+          // Add an event listener to the bulk radio button
+          bulkRadio.addEventListener('change', function () {
+            // If bulk radio button is checked, show the bulk-upload div and hide the single-upload div
+            bulkUploadDiv.style.display = bulkRadio.checked ? 'block' : 'none';
+            singleUploadDiv.style.display = bulkRadio.checked ? 'none' : '';
+          });
 
-        var navbarVerticalStyle = window.config.config.phoenixNavbarVerticalStyle;
-        var navbarVertical = document.querySelector('.navbar-vertical');
-        if (navbarVertical && navbarVerticalStyle === 'darker') {
-          navbarVertical.classList.add('navbar-darker');
-        }
-      </script>
-      <script>
-        // Get the radio buttons and the upload divs
-        var bulkRadio = document.getElementById('bulk');
-        var bulkUploadDiv = document.getElementById('bulk-upload');
-        var singleRadio = document.getElementById('single');
-        var singleUploadDiv = document.getElementById('single-upload');
-
-        // Add an event listener to the bulk radio button
-        bulkRadio.addEventListener('change', function () {
-          // If bulk radio button is checked, show the bulk-upload div and hide the single-upload div
-          bulkUploadDiv.style.display = bulkRadio.checked ? 'block' : 'none';
-          singleUploadDiv.style.display = bulkRadio.checked ? 'none' : '';
-        });
-
-        // Add an event listener to the single radio button
-        singleRadio.addEventListener('change', function () {
-          // If single radio button is checked, show the single-upload div and hide the bulk-upload div
-          singleUploadDiv.style.display = singleRadio.checked ? 'block' : 'none';
-          bulkUploadDiv.style.display = singleRadio.checked ? 'none' : '';
-        });
-      </script>
+          // Add an event listener to the single radio button
+          singleRadio.addEventListener('change', function () {
+            // If single radio button is checked, show the single-upload div and hide the bulk-upload div
+            singleUploadDiv.style.display = singleRadio.checked ? 'block' : 'none';
+            bulkUploadDiv.style.display = singleRadio.checked ? 'none' : '';
+          });
+        </script>
 
   </main>
   <!-- ===============================================-->
